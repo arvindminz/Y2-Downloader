@@ -1,5 +1,5 @@
 // Replace with your actual backend URL after deployment
-const BACKEND_URL = 'http://localhost:5000'; // Change this to your deployed backend URL
+const BACKEND_URL = 'https://y2-downloader-1.onrender.com'; // Change this to your deployed backend URL
 
 let selectedFormat = null;
 let currentVideoUrl = null;
