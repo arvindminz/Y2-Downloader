@@ -6,6 +6,9 @@ import uuid
 import threading
 import time
 import re
+import warnings
+warnings.filterwarnings('ignore', category=UserWarning, module='yt_dlp')
+
 
 app = Flask(__name__)
 CORS(app)
