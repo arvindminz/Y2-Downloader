@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Downloader</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>YouTube Downloader</h1>
+        <p class="subtitle">Download videos from YouTube in various formats</p>
+        
+        <div class="input-group">
+            <input type="url" id="urlInput" placeholder="Enter YouTube URL..." required>
+            <button onclick="getVideoInfo()" id="fetchBtn">Fetch Video</button>
+        </div>
+        
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <p>Fetching video information...</p>
+        </div>
+        
+        <div id="videoInfo" class="video-info hidden">
+            <div class="video-details">
+                <img id="thumbnail" src="" alt="Video thumbnail">
+                <div class="details">
+                    <h2 id="videoTitle"></h2>
+                    <p id="videoDuration"></p>
+                </div>
+            </div>
+            
+            <div class="formats-section">
+                <h3>Available Formats</h3>
+                <div id="formatsList" class="formats-list"></div>
+            </div>
+        </div>
+        
+        <div id="error" class="error hidden"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
